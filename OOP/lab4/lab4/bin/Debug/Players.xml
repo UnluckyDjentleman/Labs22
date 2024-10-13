@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ArrayOfPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Player>
+    <ImagePath>file:///D:/Labs22/OOP/lab4/resources/Players/hronek.jpg</ImagePath>
+    <Name>Filip Hronek</Name>
+    <Position>Right defenceman</Position>
+    <Age>25</Age>
+    <Height>183</Height>
+    <Weight>84</Weight>
+    <Image>file:///D:/Labs22/OOP/lab4/resources/Players/hronek.jpg</Image>
+    <Country>Czechia</Country>
+  </Player>
+  <Player>
+    <Name>Brock Boeser</Name>
+    <Position>Center</Position>
+    <Age>25</Age>
+    <Height>188</Height>
+    <Weight>88</Weight>
+    <Image>file:///D:/Labs22/OOP/lab4/resources/Players/boeser.jpeg</Image>
+    <Country>USA</Country>
+  </Player>
+</ArrayOfPlayer>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ArrayOfPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Player>
+    <Name>Demko Thatcher</Name>
+    <Position>Goalie</Position>
+    <Age>29</Age>
+    <Height>192</Height>
+    <Weight>100</Weight>
+    <Image>file:///D:/Labs22/OOP/lab6/resources/Players/demko.jpeg</Image>
+    <Country>USA</Country>
+  </Player>
+</ArrayOfPlayer>

@@ -1,0 +1,182 @@
+﻿<Window x:Class="lab4.Filtrator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="820" Background="#00205B">
+    <!--<Window.Resources>
+        <ResourceDictionary Source="/EnglishDictionary.xaml"/>
+    </Window.Resources>-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120*"></RowDefinition>
+            <RowDefinition Height="190*"></RowDefinition>
+            <RowDefinition Height="20*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#00843D">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60*"></RowDefinition>
+                <RowDefinition Height="20*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <TextBlock Text="{DynamicResource setPosition}" Foreground="#00205B" FontFamily="Kelly Slab" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <TextBlock Text="{DynamicResource setCountry}" Foreground="#00205B" FontFamily="Kelly Slab" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource setMinAge}" Foreground="#00205B" FontFamily="Kelly Slab" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100 0 100 0"/>
+                        <TextBox Width="100"  Margin="0 3 0 3" x:Name="MinAge" FontFamily="Kelly Slab"></TextBox>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource setMinHeight}" Foreground="#00205B" FontFamily="Kelly Slab" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100 0 70.3 0"/>
+                        <TextBox Width="100"  Margin="0 3 0 3" x:Name="MinHeight" FontFamily="Kelly Slab"></TextBox>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource setMinWeight}" Foreground="#00205B" FontFamily="Kelly Slab" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100 0 66 0"/>
+                        <TextBox Width="100"  Margin="0 3 0 3" x:Name="MinWeight" FontFamily="Kelly Slab"></TextBox>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <ComboBox x:Name="PositionPlayer" Margin="0 6 0 6" Background="white" Foreground="#00843D" FontFamily="Kelly Slab" Grid.ColumnSpan="2" BorderBrush="#FF185A4A" FontSize="20px" Text="{Binding Position, UpdateSourceTrigger=PropertyChanged}">
+                        <ComboBoxItem Content="Goalie" Background="white"/>
+                        <ComboBoxItem Content="Left defenceman" Background="white"/>
+                        <ComboBoxItem Content="Right defenceman" Background="white"/>
+                        <ComboBoxItem Content="Center" Background="white"/>
+                        <ComboBoxItem Content="Left winger" Background="white"/>
+                        <ComboBoxItem Content="Right winger" Background="white"/>
+                    </ComboBox>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <ComboBox x:Name="countryPlayer" Margin="0 6 0 6" FontFamily="Kelly Slab" FontSize="20" Background="white" BorderBrush="#00843D">
+                        <ComboBoxItem x:Name="usa">
+                            <Image Source="flag-us-svgrepo-com.png" Stretch="UniformToFill" Width="50" HorizontalAlignment="Center"/>
+                        </ComboBoxItem>
+                        <ComboBoxItem x:Name="svk">
+                            <Image Source="flag-sk-svgrepo-com.png" Stretch="UniformToFill"  Width="50" HorizontalAlignment="Center"/>
+                        </ComboBoxItem>
+                        <ComboBoxItem x:Name="can">
+                            <Image Source="canada-svgrepo-com.png" Stretch="UniformToFill"   Width="50" HorizontalAlignment="Center"/>
+                        </ComboBoxItem>
+                        <ComboBoxItem x:Name="swe">
+                            <Image Source="flag-for-flag-sweden-svgrepo-com.png" Stretch="UniformToFill"   Width="50" HorizontalAlignment="Center"/>
+                        </ComboBoxItem>
+                        <ComboBoxItem x:Name="fin">
+                            <Image Source="flag-for-flag-finland-svgrepo-com.png" Stretch="UniformToFill"   Width="50" HorizontalAlignment="Center"/>
+                        </ComboBoxItem>
+                        <ComboBoxItem x:Name="cze">
+                            <Image Source="flag-for-flag-czechia-svgrepo-com.png" Stretch="UniformToFill"   Width="50" HorizontalAlignment="Center"/>
+                        </ComboBoxItem>
+                    </ComboBox>
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="1">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource setMaxAge}" Foreground="#00205B" FontFamily="Kelly Slab" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100 0 100 0"/>
+                        <TextBox Width="100"  Margin="0 3 0 3" x:Name="MaxAge" FontFamily="Kelly Slab"></TextBox>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="1">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource setMinHeight}" Foreground="#00205B" FontFamily="Kelly Slab" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100 0 70.3 0"/>
+                        <TextBox Width="100"  Margin="0 3 0 3" x:Name="MaxHeight" FontFamily="Kelly Slab"></TextBox>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="1">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource setMaxWeight}" Foreground="#00205B" FontFamily="Kelly Slab" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100 0 66 0"/>
+                        <TextBox Width="100"  Margin="0 3 0 3" x:Name="MaxWeight" FontFamily="Kelly Slab"></TextBox>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="5" Grid.Column="0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource OrderBy}" Foreground="#00205B" FontFamily="Kelly Slab" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100 0 70.3 0"/>
+                        <CheckBox Content="{DynamicResource descending}" Margin="10" FontFamily="Kelly Slab" Foreground="#00205B" x:Name="Desc"></CheckBox>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="5" Grid.Column="1">
+                    <ComboBox x:Name="Ordering" Margin="0 6 0 6" Background="white" Foreground="#00843D" FontFamily="Kelly Slab" Grid.ColumnSpan="2" BorderBrush="#FF185A4A" FontSize="20px" Text="{Binding Position, UpdateSourceTrigger=PropertyChanged}">
+                        <ComboBoxItem Content="Age" Background="white" x:Name="ageSort"/>
+                        <ComboBoxItem Content="Height" Background="white" x:Name="heightSort"/>
+                        <ComboBoxItem Content="Weight" Background="white" x:Name="weightSort"/>
+                    </ComboBox>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Button Background="#00205B" Margin="200 10 200 10" Content="{DynamicResource search}" Foreground="White" FontFamily="Kelly Slab" Click="Button_Click"></Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ScrollViewer>
+                <ListView x:Name="listView" ItemsSource="{Binding}"  BorderThickness="0" Background="Transparent" HorizontalAlignment="Center">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                CornerRadius="10"
+                                BorderThickness="1" BorderBrush="Gray"
+                                Width="300"
+                                Height="400"
+                                Padding="5"
+                                Background="#00843D">
+                                <StackPanel Orientation="Vertical">
+                                    <DockPanel Height="210">
+                                        <Border Height="200"
+                                                Padding="3 0 3 0"
+                                                CornerRadius="10"
+                                                BorderThickness="1.6" BorderBrush="white" Width="200">
+                                            <Border.Background>
+                                                <ImageBrush Stretch="Fill" ImageSource="{Binding Image}"/>
+                                            </Border.Background>
+                                        </Border>
+                                    </DockPanel>
+                                    <StackPanel VerticalAlignment="Center" Margin="0 9">
+                                        <TextBlock FontSize="16" FontWeight="DemiBold" HorizontalAlignment="Center" FontFamily="Kelly Slab" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Foreground="#e2decb"/>
+                                        <TextBlock HorizontalAlignment="Center" Foreground="white" Text="{Binding Country, UpdateSourceTrigger=PropertyChanged}" FontFamily="Kelly Slab"/>
+                                        <TextBlock FontSize="15" DockPanel.Dock="Left" Margin="3 0 0 0" TextAlignment="Center" Width="90" Foreground="white" FontFamily="Kelly Slab" Text="{Binding Position, UpdateSourceTrigger=PropertyChanged}" />
+                                        <TextBlock FontSize="15" DockPanel.Dock="Right" Margin="0 0 3 0" TextAlignment="Center" Width="90" Foreground="white" FontFamily="Kelly Slab" Text="{Binding Height, UpdateSourceTrigger=PropertyChanged,StringFormat=\{0\} cm}" />
+                                        <TextBlock FontSize="15" DockPanel.Dock="Right" Margin="0 0 3 0" TextAlignment="Center" Width="90" Foreground="white" FontFamily="Kelly Slab" Text="{Binding Weight, UpdateSourceTrigger=PropertyChanged, StringFormat=\{0\} kg}" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollViewer>
+        </Grid>
+        <Grid Grid.Row="2">
+            <TextBox  VerticalAlignment="Center" x:Name="SearchTextBox" Height="46" TextChanged="SearchTermTextBox_TextChanged" FontFamily="Kelly Slab"/>
+            <TextBlock x:Name="SearchText" IsHitTestVisible="False" Text="{DynamicResource searchByName}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="DarkGray" FontFamily="Kelly Slab">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=SearchTextBox}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Window>
+

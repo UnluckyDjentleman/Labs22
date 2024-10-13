@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="backgroundCol" TargetType="Grid">
+        <Setter Property="Background" Value="#00205B"></Setter>
+    </Style>
+    <Style x:Key="backgroundPanel" TargetType="StackPanel">
+        <Setter Property="Background" Value="#00843D"></Setter>
+    </Style>
+    <Style x:Key="backgroundButton" TargetType="Button">
+        <Setter Property="Background" Value="white"></Setter>
+        <Setter Property="Foreground" Value="#00843D"></Setter>
+        <Setter Property="FontFamily" Value="Kelly Slab"></Setter>
+        <Setter Property="FontSize" Value="24"></Setter>
+    </Style>
+    <Style x:Key="backgroundText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="#00843D"></Setter>
+    </Style>
+    <Style x:Key="backgroundCol1" TargetType="Grid">
+        <Setter Property="Background" Value="#00843D"></Setter>
+    </Style>
+    <Style x:Key="lol" TargetType="Button">
+        <Setter Property="Background" Value="#00205B"></Setter>
+        <Setter Property="Foreground" Value="white"></Setter>
+    </Style>
+</ResourceDictionary>

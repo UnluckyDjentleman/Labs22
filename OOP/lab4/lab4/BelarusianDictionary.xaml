@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <v:String x:Key="Canucks">Ванкувер Кэнакс</v:String>
+
+    <v:String x:Key="addPlayer">Дадаць гульца</v:String>
+    <v:String x:Key="xmlSerialize">XML серыялізацыя</v:String>
+    <v:String x:Key="filter">Фільтрацыя</v:String>
+
+
+
+    <v:String x:Key="setName">Імя</v:String>
+    <v:String x:Key="setCountry">Краіна</v:String>
+    <v:String x:Key="setPosition">Пазіцыя</v:String>
+    <v:String x:Key="setAge">Узрост</v:String>
+    <v:String x:Key="setHeight">Рост</v:String>
+    <v:String x:Key="setWeight">Вес</v:String>
+    <v:String x:Key="addHim">Дадаць!</v:String>
+    <v:String x:Key="updateHim">Аднавіць</v:String>
+
+    <v:String x:Key="RemoveFromRoster">Выдаліць</v:String>
+    <v:String x:Key="updPlayer">Аднавіць</v:String>
+
+    <v:String x:Key="goalie">Goalie</v:String>
+    <v:String x:Key="ldef">Left defenceman</v:String>
+    <v:String x:Key="rdef">Right defenceman</v:String>
+    <v:String x:Key="lw">Left winger</v:String>
+    <v:String x:Key="center">Center</v:String>
+    <v:String x:Key="rw">Right winger</v:String>
+
+    <v:String x:Key="setMinAge">Узрост(мін)</v:String>
+    <v:String x:Key="setMaxAge">Узрост(макс)</v:String>
+    <v:String x:Key="setMinHeight">Рост(мін)</v:String>
+    <v:String x:Key="setMaxHeight">Рост(макс)</v:String>
+    <v:String x:Key="setMinWeight">Вес(мін)</v:String>
+    <v:String x:Key="setMaxWeight">Вес(макс)</v:String>
+
+    <v:String x:Key="OrderBy">Сарціраваць</v:String>
+    <v:String x:Key="descending">Наадаварот</v:String>
+    <v:String x:Key="search">Шукаць</v:String>
+    <v:String x:Key="searchByName">Шукаць па імені</v:String>
+</ResourceDictionary>

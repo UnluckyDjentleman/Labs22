@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <v:String x:Key="Canucks">Vancouver Canucks</v:String>
+    <v:String x:Key="HC">NHL Hockey Club</v:String>
+    <v:String x:Key="since">Since 1970</v:String>
+
+    <v:String x:Key="addPlayer">Add Player</v:String>
+    <v:String x:Key="xmlSerialize">XML Serialize</v:String>
+    <v:String x:Key="filter">Filter</v:String>
+
+    <v:String x:Key="help">Help</v:String>
+
+    <v:String x:Key="setName">Name</v:String>
+    <v:String x:Key="setCountry">Country</v:String>
+    <v:String x:Key="setPosition">Position</v:String>
+    <v:String x:Key="setAge">Age</v:String>
+    <v:String x:Key="setHeight">Height</v:String>
+    <v:String x:Key="setWeight">Weight</v:String>
+    <v:String x:Key="addHim">Add Player!</v:String>
+    <v:String x:Key="updateHim">Update Player</v:String>
+    
+    <v:String x:Key="RemoveFromRoster">Remove from roster</v:String>
+    <v:String x:Key="updPlayer">Update</v:String>
+
+    <v:String x:Key="goalie">Goalie</v:String>
+    <v:String x:Key="ldef">Left defenceman</v:String>
+    <v:String x:Key="rdef">Right defenceman</v:String>
+    <v:String x:Key="lw">Left winger</v:String>
+    <v:String x:Key="center">Center</v:String>
+    <v:String x:Key="rw">Right winger</v:String>
+
+    <v:String x:Key="setMinAge">Min Age</v:String>
+    <v:String x:Key="setMaxAge">Max Age</v:String>
+    <v:String x:Key="setMinHeight">Min Height</v:String>
+    <v:String x:Key="setMaxHeight">Max Height</v:String>
+    <v:String x:Key="setMinWeight">Min Weight</v:String>
+    <v:String x:Key="setMaxWeight">Max Weight</v:String>
+
+    <v:String x:Key="OrderBy">Order By</v:String>
+    <v:String x:Key="descending">Desc</v:String>
+    <v:String x:Key="search">Search</v:String>
+    <v:String x:Key="searchByName">Search by name</v:String>
+</ResourceDictionary>
